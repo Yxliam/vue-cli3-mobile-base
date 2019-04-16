@@ -48,30 +48,14 @@ yarn push
 
 Tips：如果需要使用 px 作为单位，可以把 PX 大写，或者在后面加 /* no */
 
-## 其他组件
-
-[vue-awesome-swiper 滚动组件库](https://github.com/surmon-china/vue-awesome-swiper)
-
-[xgplayer 西瓜播放器](https://h5player.bytedance.com/)
-
-[html2canvas](https://html2canvas.hertzen.com/)
-
-[qrcodeJs - 生成二维码](https://www.jianshu.com/p/2e5e2f5a091c)
-
-[Animate.css](https://daneden.github.io/animate.css/)
 
 ## 推荐规范
 
 1、命名
 
-组件命名:
-
 ```
 文件与组件命名保持一致，使用 PascalCase，即驼峰命名法，如：CountDown.vue 为一个倒计时组件。
 
-
-
-页面命名：
 
 ```
 Vue中什么都是组件，包括页面，但是我们为了与UI、业务组件作出区分，凡是页面组件的命名均以"小驼峰法"命名，如：home.vue。
