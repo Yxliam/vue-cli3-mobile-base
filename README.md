@@ -53,15 +53,14 @@ Tips：如果需要使用 px 作为单位，可以把 PX 大写，或者在后�
 
 1、命名
 
-```
+
 文件与组件命名保持一致，使用 PascalCase，即驼峰命名法，如：CountDown.vue 为一个倒计时组件。
 
-
-```
 Vue中什么都是组件，包括页面，但是我们为了与UI、业务组件作出区分，凡是页面组件的命名均以"小驼峰法"命名，如：home.vue。
-```
+
 
 变量命名：
+
 ```
 常量——全大写+下划线，如：
 
@@ -85,10 +84,13 @@ let _name = '小明';
 
 样式统一在 style 文件夹里维护
 
+```
+
     |- common.scss  里面放公共的、全局的、使用频率比较高的样式，这样可以方便组织样式。如：.hide{display: none;}
     |- mixin.scss   里面放全局的样式方法，已经在webpack中全局引入，使用的时候 @include ct();
     |- reset.scss   里面放页面样式重置的css，不需要修改
     |- var.scss     里面放公共变量，方便全局样式，如：颜色、字体大小等
+```
 
 3、vuex
 
@@ -139,7 +141,6 @@ store 按页面或者业务划分，然后统一由 store/index.js 输出
 3、我要开发移动端H5怎么做？
 
 ```
-1、切换到mobile_template分支，这是为移动端开发专门准备的模版，执行命令：git checkout mobile_template。
 2、查看设计稿的宽度，如750px、375px。
 3、将设计稿宽度/10，然后修改 package.json 中的 postcss-px2rem 下的 remUnit
 4、样式、css等就可以按照设计稿的大小用px来写了
@@ -222,7 +223,7 @@ proxy: 'http://xxx.com'
 @include border-right();
 @include border();
 
-同时你也可以传入一些配置项来设置border的颜色、粗细等等，详细的请切换到 mobile_template 分支，查看 src/style/mixin.scss 里面的 border 类。
+同时你也可以传入一些配置项来设置border的颜色、粗细等等，查看 src/style/mixin.scss 里面的 border 类。
 ```
 
 
